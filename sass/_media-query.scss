@@ -1,0 +1,17 @@
+@media screen and (min-width: 800px) {
+    .main{
+        grid-template-columns: 2fr 1fr;
+    }
+    .main__logo{
+        display: flex;        
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .main{
+        grid-template-columns:  1fr;
+    }
+    div.main__logo{
+        display: none;        
+    }
+}

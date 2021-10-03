@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "sass": "^1.39.2"
+  },
+  "name": "login",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass":"sass --watch sass/index.scss build/stylesheets/index.css",
+    "sass:build":"sass  sass/index.scss build/stylesheets/index.css --style compressed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

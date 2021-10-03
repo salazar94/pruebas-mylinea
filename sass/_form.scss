@@ -1,0 +1,76 @@
+.form {
+    &__button{
+        border-radius: 5px;
+        height: 45px;
+        width: 175px;
+        outline: none;
+        color: white;
+        margin-right: 20px;        
+        background-color: vars.$fontColor;
+        font-size: 0.985em;
+        transition: 200ms ease-in-out background-color;
+        &:hover{            
+            background-color: darken(vars.$fontColor, 4%);
+        }
+        border:1px solid vars.$fontColor;
+        &--outline{
+            color: vars.$fontColor;       
+            background-color: white;   
+            border: none;
+            
+        }
+    }
+    &__link{
+        font-size: 1.2em;
+        display: block;
+        color: lighten( vars.$fontColor,8%);
+        text-decoration: none;
+        &:hover{
+            color: darken( vars.$fontColor,4%);
+        }
+    }
+    &__label{
+        padding-bottom: 5px;
+        &--error{
+            padding-top: 5px;
+            font-size: .75em;
+            color: red;
+            font-weight: bolder;
+        }
+    }
+    &__input {        
+        margin-left: 15px;
+        &::placeholder{
+            color: lighten(vars.$fontColor,20%);
+        }    
+        color:vars.$fontColor;            
+        caret-color:lighten(vars.$fontColor,3%);
+        border: none;
+        height: 35px;
+        width: 90%;
+        font-size: 1.75em;
+        outline: none;        
+    }
+    &__controls{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;      
+        &--row{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+    }
+    &__group{
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-bottom:1px solid vars.$fontColor;
+    }
+}
+
+
