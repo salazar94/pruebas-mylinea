@@ -26,6 +26,8 @@
     }
     &__date {
         font-family: "Poppins", "Arial";
+        width: 100%;
+        box-sizing: border-box;
     }
     &__button {
         align-items: center;

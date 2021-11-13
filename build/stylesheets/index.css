@@ -108,6 +108,8 @@
 }
 .form__date {
   font-family: "Poppins", "Arial";
+  width: 100%;
+  box-sizing: border-box;
 }
 .form__button {
   align-items: center;
