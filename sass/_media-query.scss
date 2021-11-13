@@ -7,4 +7,48 @@
     .main__content-image {
         display: block;
     }
+    .main__logo {
+        display: none;
+    }
+    .main {
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 768px) {
+    .main {
+        & hr {
+            display: none;
+        }
+        &__caption{
+            margin-bottom: auto;
+        }
+        &__form {
+            // box-sizing: border-box;
+            padding-right: 175px;
+            padding-left: 175px;     
+            margin: 0;                 
+        }
+        &__logo{
+            display: grid;
+            grid-template-columns: 100%;
+            &--img{
+                height: 200px ;
+                align-self: flex-end;
+            }
+            &-img{
+                height: 200px ;
+                justify-self: center;
+                align-self: center;
+            }
+        }
+    }
+    .form{
+        &__submit {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__button {
+            width: 45%
+        }
+    }
 }
