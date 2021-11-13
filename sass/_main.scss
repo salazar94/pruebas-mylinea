@@ -1,0 +1,29 @@
+@use "vars";
+
+.main {
+    // width: 100vw;
+    height: 100vh;
+    &__title {
+        @extend %text-title-properties;
+        justify-self: center;
+        margin-bottom: 24px;
+        margin-top: 32px;
+        color: vars.$main-color;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: 100%;
+        &-image{
+            width: 80%;
+            align-self: center;
+            justify-self: center;
+            margin-top: 56px;
+            margin-bottom:24px ;
+            display: none;
+        }
+    }
+    &__form{
+        margin-top: auto;
+
+    }    
+}

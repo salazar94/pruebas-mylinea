@@ -1,17 +1,10 @@
-@media screen and (min-width: 800px) {
-    .main{
-        grid-template-columns: 2fr 1fr;
+@media (max-width: 768px) {
+    .form__button {
+        &:active {
+            transform: scale(0.96);
+        }
     }
-    .main__logo{
-        display: flex;        
-    }
-}
-
-@media screen and (max-width: 790px) {
-    .main{
-        grid-template-columns:  1fr;
-    }
-    div.main__logo{
-        display: none;        
+    .main__content-image {
+        display: block;
     }
 }

@@ -1,4 +1,23 @@
-$backgroundColor : white;
-$fontColor: #f26725;
-$fontInputColor: #f7f8f9;
-$fontInputSecondColor:#d6e4e8;
+$text-placeholder: #f5f7f9;
+$text-label-color: #847da4;
+$main-color: #fd6a25;
+
+%text-title-properties {
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 500;
+}
+
+%label-properties {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+%input-properties {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 500;
+    padding: 12px 14px;
+}
